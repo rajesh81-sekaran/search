@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 	"net/http"
-	"search"
+	"github.com/rajesh81-sekaran/search"
 )
 
 func init() {
