@@ -84,6 +84,7 @@ httpTimeOut           = 20
 `Request1`
 
 `curl -X GET http://localhost:9292/stock/MSFT 2>>/dev/null | json`
+
 `Response1`
 ```
 {
@@ -106,6 +107,7 @@ httpTimeOut           = 20
 `Request2`
 
 `curl -X GET http://localhost:9292/stock/AAPL 2>>/dev/null | json`
+
 `Response2`
 ```
 {
@@ -128,6 +130,7 @@ httpTimeOut           = 20
 `Request3`
 
 `curl -X GET http://localhost:9292/stock/NOTEXIST 2>>/dev/null | json`
+
 `Response3`
 ```
 "Error! The requested stock(s) could not be found."
