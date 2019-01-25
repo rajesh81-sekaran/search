@@ -17,17 +17,17 @@ go build service.go
 ./service
 ```
 
-#Without any command line options or environment variables the service starts on the port 9292.
+**Without any command line options or environment variables the service starts on the port 9292.**
 
-`Available functionality`
+**Available functionality**
 `Search a given stock symbol, with the symbol being part of the path in the URL.`
-`Yet to be developed`
+**Yet to be developed**
 ```
 (a) stock_exchange query parameter handling
 (b) test cases
 ```
 
-`Command line flags`
+**Command line flags**
 ```
 -tdApiKey string
     worldtradingdata api key
@@ -43,7 +43,7 @@ go build service.go
     http get timeout
 ```
 
-`Environment variables`
+**Environment variables**
 ```
 TD_API_KEY
     worldtradingdata api key
@@ -59,7 +59,7 @@ HTTP_TIMEOUT
     http get timeout
 ```
 
-`Default values`
+**Default values**
 ```
 tradingDataApiKey     = "TFxDjEXdqrlzDdnxJMuBTUak9V7gH6YGSo802rQWTEi7IaE9H2zc5LVHvZ4t"
 tradingDataApiVersion = "v1"
@@ -77,10 +77,10 @@ httpTimeOut           = 20
 (3) Default values
 ```
 
-#Example requests and responses
-#Request1
+**Example requests and responses**
+**Request1**
 `curl -X GET http://localhost:9292/stock/MSFT 2>>/dev/null | json`
-#Response1
+**Response1**
 ```
 {
   "symbol": "MSFT",
@@ -99,9 +99,9 @@ httpTimeOut           = 20
 }
 ```
 
-#Request2
+**Request2**
 `curl -X GET http://localhost:9292/stock/AAPL 2>>/dev/null | json`
-#Response2
+**Response2**
 ```
 {
   "symbol": "AAPL",
@@ -120,9 +120,9 @@ httpTimeOut           = 20
 }
 ```
 
-#Request3
+**Request3**
 `curl -X GET http://localhost:9292/stock/NOTEXIST 2>>/dev/null | json`
-#Response3
+**Response3**
 ```
 "Error! The requested stock(s) could not be found."
 ```
